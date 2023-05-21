@@ -15,8 +15,8 @@ int main(){
     }
 
 
-    for(int i=0;i<n;i++){
-        for(int j=i;j<n;j++){
+    for(int i=0;i<n-1;i++){
+        for(int j=i+1;j<n;j++){
             if (lis[i]>lis[j]){
                 temp=lis[i];
                 lis[i]=lis[j];
@@ -30,6 +30,6 @@ int main(){
         cout<<lis[k]<<" ";
     }
     
-
+        
     return 0;
 }
